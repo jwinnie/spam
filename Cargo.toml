@@ -1,0 +1,19 @@
+[package]
+name = "spam"
+version = "0.1.0"
+authors = ["J Winnie <cargo@stormdesign.us>"]
+
+[lib]
+name = "spam"
+path = "src/lib.rs"
+
+[[bin]]
+name = "spam"
+path = "src/spam.rs"
+
+[dependencies]
+hyper = "0.10.10"
+hyper-native-tls = "0.2.2"
+toml = "0.4.1"
+serde = "1.0"
+serde_derive = "1.0"
